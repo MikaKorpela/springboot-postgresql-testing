@@ -18,7 +18,7 @@ import org.springframework.test.context.ContextConfiguration;
 @ExtendWith(PostgresContainerInitializer.class)
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @ContextConfiguration(initializers = PostgresContainerInitializer.class)
-public class DuckJpaRepositoryTest {
+class DuckJpaRepositoryTest {
   @Autowired
   private DuckJpaRepository repository;
 

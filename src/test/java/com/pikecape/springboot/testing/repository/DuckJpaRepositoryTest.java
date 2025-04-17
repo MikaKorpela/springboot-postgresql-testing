@@ -22,17 +22,14 @@ public class DuckJpaRepositoryTest {
   @Autowired
   private DuckJpaRepository repository;
 
-  private final UUID uid1 = UUID.randomUUID();
   private final DuckEntity duey = DuckEntity.builder()
       .name("Duey")
       .build();
 
-  private final UUID uid2 = UUID.randomUUID();
   private final DuckEntity huey = DuckEntity.builder()
       .name("Huey")
       .build();
 
-  private final UUID uid3 = UUID.randomUUID();
   private final DuckEntity luey = DuckEntity.builder()
       .name("Luey")
       .build();

@@ -14,9 +14,9 @@ public class PostgresContainerInitializer implements
   private static final PostgreSQLContainer postgreSqlContainer = new PostgreSQLContainer(
       DockerImageName.parse("postgres:latest")
   )
-      .withDatabaseName("postgres")
-      .withUsername("postgres")
-      .withPassword("postgres");
+      .withDatabaseName("pikecape")
+      .withUsername("admin")
+      .withPassword("admin");
 
   @Override
   public void initialize(ConfigurableApplicationContext applicationContext) {
